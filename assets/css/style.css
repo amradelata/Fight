@@ -1,0 +1,112 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #222f3e;
+    padding: 0;
+    margin: 0;
+    font-family: 'Lato',
+        sans-serif;
+}
+
+
+.container {
+    padding: 20px;
+}
+
+.deathText,
+h1 {
+    display: inline-block;
+    color: #fff;
+    font-weight: 900;
+}
+
+h1 {
+    text-align: center;
+    display: block;
+}
+
+.right {
+    float: right;
+}
+
+.battleField {
+    display: flex;
+
+}
+
+.box {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16),
+        0 3px 6px rgba(0, 0, 0, 0.23);
+    background-color: #fff;
+    text-align: center;
+    width: 16%;
+    height: 500px;
+    /* padding: 35px; */
+    margin: 5px;
+    overflow-y: scroll;
+}
+
+.arrow {
+    margin-top: -400px;
+}
+
+.contestants {
+    border: 1px solid black;
+    background-color: #dcdde1;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19),
+        0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+img {
+    width: 100px;
+    /* height: 150px; */
+    cursor: pointer;
+}
+
+button {
+    background-color: #00a8ff;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    margin-top: 50px;
+    cursor: pointer;
+}
+
+.lightgreen,
+.darckgreen,
+.JOUSTBLUE,
+.BELIZEHOLE,
+.ALIZARIN,
+.darkRed {
+    color: #fff;
+    font-weight: bolder;
+    margin-bottom: 20px;
+}
+
+
+.lightgreen {
+    background-color: #4cd137;
+}
+
+.darckgreen {
+    background-color: #16a085;
+}
+
+.JOUSTBLUE {
+    background-color: #54a0ff;
+}
+
+.BELIZEHOLE {
+    background-color: #2980b9;
+}
+
+.ALIZARIN {
+
+    background-color: #ED4C67;
+}
+
+.darkRed {
+    background-color: #EA2027;
+}
