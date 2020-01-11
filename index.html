@@ -6,18 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./assets/css/style.css">
-    <title>death</title>
+    <link rel="icon" type="image/png" href="./assets/img/Baby-Toy-Preorder-FP.png">
+    <meta name="keywords" content="amradel,amradelata,amr adel ata,amr adel, Front-end-developer, web-developer, web-designer,
+          website-developer,games,PewDiePie">
+    <meta name="description" content="Which One You Could Beat in a Fight">
+    <title>Fight 💪🥊</title>
 </head>
 
-<body id="capture">
-
-
-    <div class="container">
-        <h1>Which One You Could Beat in a Fight</h1>
-        <h2 class="deathText">DEATH</h2>
-        <h2 class="deathText right">DEATH</h2>
-
+<body id="capture" class="container">
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous"
+        src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v5.0&appId=730072863784671&autoLogAppEvents=1">
+    </script>
+    <a>
+        <h1>Which One You Could Beat in a Fight 💪🥊</h1>
         <div class="battleField">
+            <div class="arrow"></div>
             <div class="box box2" id="div2" ondrop="drop(event)" ondragover="allowDrop(event)">
                 <div class="darkRed">
                     They Would Kick my ass
@@ -48,13 +52,12 @@
                     I Would Kick theirass
                 </div>
             </div>
-
+            <div class="arrow2"></div>
         </div>
-
-
         <!-- All contestants -->
         <div class="contestants" id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
-            <img src="./assets/img/Baby-Toy-Preorder-FP.png" draggable="true" ondragstart="drag(event)" id="drag1">
+            <img src="./assets/img/Baby-Toy-Preorder-FP.png" draggable="true" ondragstart="drag(event)" id="drag1"
+                URL="drag this image in the field">
             <img src="./assets/img/casey-neistati.png" draggable="true" ondragstart="drag(event)" id="drag2">
             <img src="./assets/img/41eqKcQXl4L.png" draggable="true" ondragstart="drag(event)" id="drag3">
             <img src="./assets/img/CinnamonToastKen.png" draggable="true" ondragstart="drag(event)" id="drag4">
@@ -78,27 +81,48 @@
             <img src="./assets/img/SSSNIPERWOLF.png" draggable="true" ondragstart="drag(event)" id="drag22">
             <img src="./assets/img/Tana-Mongeau.png" draggable="true" ondragstart="drag(event)" id="drag23">
             <img src="./assets/img/will-smith.png" draggable="true" ondragstart="drag(event)" id="drag24">
+            <img src="./assets/img/dr-phil-batman.png" draggable="true" ondragstart="drag(event)" id="drag25">
         </div>
         <button>Download your image</button>
-    </div>
-    <script src="./assets/js/html2canvas.min.js"></script>
-    <script src="./assets/js/scrpt.js"></script>
-    <script>
-        const btn = document.querySelector('button');
-        btn.addEventListener('click', () => {
-            // step 1: convert html to canvas
-            html2canvas(document.querySelector('#capture')).then(canvas => {
-                // step 2: create a fake link
-                var link = document.createElement('a');
-                // step 3: set the file name
-                link.download = 'filename.png';
-                // step 4: convert the canvas tag to image data (data url)
-                link.href = canvas.toDataURL();
-                // step 5: do a fake click on the fake link in order to make the browser to download the image
-                link.click();
+        <div class="socialMedia">
+            <a class="myLink" href="https://www.youtube.com/watch?v=bnkDBfV3OoM&t=50s">📺 Watch the video (subscribe to
+                pewdiepie)</a>
+            <a class="myLink" href="https://github.com/amradelata/Fight">🥇 Link on git: Fight (If you want to improve
+                it)</a>
+            <a class="myLink" href="https://amradelata.com">❤️ Made with: amradelata</a>
+            <a class="myLink" href="mailto:amradelata@gmail.com">🥋 Contact with me: amradelata@gmail.com</a>
+            <!-- facebook share button -->
+            <a class="fb-share-button" data-href="https://whiconeyoucouldbeatinafight.netlify.com" data-layout="button"
+                data-size="large"><a target="_blank"
+                    href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.amradelata.com%2F&amp;src=sdkpreparse"
+                    class="fb-xfbml-parse-ignore"></a></a>
+            <!-- twitter share button -->
+            <a class="twitter-share-button"
+                href="https://twitter.com/intent/tweet?text=https://whiconeyoucouldbeatinafight.netlify.com/%20made%20with "
+                data-size="large">
+                Tweet</a>
+            <link rel="canonical" href="https://www.amradelata.com/">
+        </div>
+        </div>
+        </div>
+        <script src="./assets/js/html2canvas.min.js"></script>
+        <script src="./assets/js/scrpt.js"></script>
+        <script>
+            const btn = document.querySelector('button');
+            btn.addEventListener('click', () => {
+
+                html2canvas(document.querySelector('#capture')).then(canvas => {
+
+                    var link = document.createElement('a');
+
+                    link.download = 'filename.png';
+
+                    link.href = canvas.toDataURL();
+
+                    link.click();
+                });
             });
-        });
-    </script>
+        </script>
 </body>
 
 </html>

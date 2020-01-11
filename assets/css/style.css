@@ -10,6 +10,17 @@ body {
         sans-serif;
 }
 
+.myLink {
+    color: honeydew;
+    display: block;
+    text-decoration: none;
+    margin-bottom: 20px;
+    /* width: 20%; */
+}
+
+.socialMedia {
+    margin-left: 40px;
+}
 
 .container {
     padding: 20px;
@@ -43,26 +54,35 @@ h1 {
     text-align: center;
     width: 16%;
     height: 500px;
-    /* padding: 35px; */
     margin: 5px;
-    overflow-y: scroll;
+    overflow: hidden;
 }
 
-.arrow {
-    margin-top: -400px;
+.box2 {
+    margin-left: 0;
+    background-image: url('../img/blood2.png');
 }
+
+.box6 {
+    margin-right: 0;
+    background-image: url('../img/blood1.png');
+}
+
+
 
 .contestants {
     border: 1px solid black;
     background-color: #dcdde1;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19),
         0 6px 6px rgba(0, 0, 0, 0.23);
+    margin: 35px;
+    padding: 20px;
 }
 
 img {
-    width: 100px;
-    /* height: 150px; */
+    height: 100px;
     cursor: pointer;
+    margin: 10px;
 }
 
 button {
@@ -70,9 +90,14 @@ button {
     color: #fff;
     border: none;
     padding: 10px;
-    margin-top: 50px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    margin-bottom: 35px;
     cursor: pointer;
+
 }
+
 
 .lightgreen,
 .darckgreen,
@@ -109,4 +134,38 @@ button {
 
 .darkRed {
     background-color: #EA2027;
+}
+
+.arrow {
+    width: 0px;
+    height: 0;
+    border-top: 35px solid transparent;
+    border-bottom: 35px solid transparent;
+    border-right: 35px solid #EA2027;
+    margin-top: -20px;
+}
+
+.arrow2 {
+    width: 0px;
+    height: 0;
+    border-top: 35px solid transparent;
+    border-bottom: 35px solid transparent;
+    border-left: 35px solid #4cd137;
+    margin-top: -20px;
+}
+
+@media screen and (min-width: 1216px) and (max-width: 1407px) {
+    .box {
+        height: 400px;
+    }
+
+    .contestants {
+        padding: 20px;
+    }
+
+    img {
+        margin: 10px;
+        /* width: 70px; */
+        height: 80px;
+    }
 }
