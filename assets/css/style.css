@@ -10,6 +10,10 @@ body {
         sans-serif;
 }
 
+.message {
+    display: none;
+}
+
 .myLink {
     color: honeydew;
     display: block;
@@ -169,5 +173,16 @@ button {
         margin: 10px;
         /* width: 70px; */
         height: 80px;
+    }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 800px) {
+    .desktop {
+        display: none;
+    }
+
+    .message {
+        display: block;
     }
 }

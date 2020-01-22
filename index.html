@@ -14,116 +14,143 @@
 </head>
 
 <body id="capture" class="container">
-    <div id="fb-root"></div>
-    <script async defer crossorigin="anonymous"
-        src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v5.0&appId=730072863784671&autoLogAppEvents=1">
-    </script>
-    <a>
-        <h1>Which One You Could Beat in a Fight 💪🥊</h1>
-        <h5>PC Version 🖥️</h5>
-        <div class="battleField">
-            <div class="arrow"></div>
-            <div class="box box2" id="div2" ondrop="drop(event)" ondragover="allowDrop(event)">
-                <div class="darkRed">
-                    They Would Kick my ass
-                </div>
-            </div>
-            <div class="box box1" id="div2" ondrop="drop(event)" ondragover="allowDrop(event)">
-                <div class="ALIZARIN">
-                    They Would Kick my ass
-                </div>
-            </div>
-            <div class="box box3" id="div2" ondrop="drop(event)" ondragover="allowDrop(event)">
-                <div class="BELIZEHOLE">
-                    Fair Fight
-                </div>
-            </div>
-            <div class="box box4" id="div2" ondrop="drop(event)" ondragover="allowDrop(event)">
-                <div class="JOUSTBLUE">
-                    Fair Fight
-                </div>
-            </div>
-            <div class="box box5" id="div2" ondrop="drop(event)" ondragover="allowDrop(event)">
-                <div class="darckgreen">
-                    I Would Kick theirass
-                </div>
-            </div>
-            <div class="box box6" id="div2" ondrop="drop(event)" ondragover="allowDrop(event)">
-                <div class="lightgreen">
-                    I Would Kick theirass
-                </div>
-            </div>
-            <div class="arrow2"></div>
-        </div>
-        <!-- All contestants -->
-        <div class="contestants" id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
-            <img src="./assets/img/Baby-Toy-Preorder-FP.png" draggable="true" ondragstart="drag(event)" id="drag1"
-                URL="drag this image in the field">
-            <img src="./assets/img/casey-neistati.png" draggable="true" ondragstart="drag(event)" id="drag2">
-            <img src="./assets/img/41eqKcQXl4L.png" draggable="true" ondragstart="drag(event)" id="drag3">
-            <img src="./assets/img/CinnamonToastKen.png" draggable="true" ondragstart="drag(event)" id="drag4">
-            <img src="./assets/img/David-Dobrik.png" draggable="true" ondragstart="drag(event)" id="drag5">
-            <img src="./assets/img/dr-phil.png" draggable="true" ondragstart="drag(event)" id="drag6">
-            <img src="./assets/img/elon-musk.png" draggable="true" ondragstart="drag(event)" id="drag7">
-            <img src="./assets/img/felix-kjellberg.png" draggable="true" ondragstart="drag(event)" id="drag8">
-            <img src="./assets/img/jacksepticeye.png" draggable="true" ondragstart="drag(event)" id="drag9">
-            <img src="./assets/img/Jake-Paul.png" draggable="true" ondragstart="drag(event)" id="drag10">
-            <img src="./assets/img/Jenna-Marbles.png" draggable="true" ondragstart="drag(event)" id="drag11">
-            <img src="./assets/img/John-Wick.png" draggable="true" ondragstart="drag(event)" id="drag12">
-            <img src="./assets/img/KSI.png" draggable="true" ondragstart="drag(event)" id="drag13">
-            <img src="./assets/img/Lilly-Singh.png" draggable="true" ondragstart="drag(event)" id="drag14">
-            <img src="./assets/img/liza-koshy.png" draggable="true" ondragstart="drag(event)" id="drag15">
-            <img src="./assets/img/Logan-Paul.png" draggable="true" ondragstart="drag(event)" id="drag16">
-            <img src="./assets/img/mark.png" draggable="true" ondragstart="drag(event)" id="drag17">
-            <img src="./assets/img/Michael-Stevens.png" draggable="true" ondragstart="drag(event)" id="drag18">
-            <img src="./assets/img/MIRANDA SINGS.png" draggable="true" ondragstart="drag(event)" id="drag19">
-            <img src="./assets/img/mr-beast.png" draggable="true" ondragstart="drag(event)" id="drag20">
-            <img src="./assets/img/ninja.png" draggable="true" ondragstart="drag(event)" id="drag21">
-            <img src="./assets/img/SSSNIPERWOLF.png" draggable="true" ondragstart="drag(event)" id="drag22">
-            <img src="./assets/img/Tana-Mongeau.png" draggable="true" ondragstart="drag(event)" id="drag23">
-            <img src="./assets/img/will-smith.png" draggable="true" ondragstart="drag(event)" id="drag24">
-            <img src="./assets/img/dr-phil-batman.png" draggable="true" ondragstart="drag(event)" id="drag25">
-        </div>
-        <button>Download your image</button>
-        <div class="socialMedia">
-            <a class="myLink" href="https://www.youtube.com/watch?v=bnkDBfV3OoM&t=50s">📺 Watch the video (subscribe to
-                pewdiepie)</a>
-            <a class="myLink" href="https://github.com/amradelata/Fight">🥇 Link on git: Fight (If you want to improve
-                it)</a>
-            <a class="myLink" href="https://amradelata.com">❤️ Made with: amradelata</a>
-            <a class="myLink" href="mailto:amradelata@gmail.com">🥋 Contact with me: amradelata@gmail.com</a>
-            <!-- facebook share button -->
-            <a class="fb-share-button" data-href="https://whiconeyoucouldbeatinafight.netlify.com" data-layout="button"
-                data-size="large"><a target="_blank"
-                    href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.amradelata.com%2F&amp;src=sdkpreparse"
-                    class="fb-xfbml-parse-ignore"></a></a>
-            <!-- twitter share button -->
-            <a class="twitter-share-button"
-                href="https://twitter.com/intent/tweet?text=https://whiconeyoucouldbeatinafight.netlify.com/%20made%20with "
-                data-size="large">
-                Tweet</a>
-            <link rel="canonical" href="https://www.amradelata.com/">
-        </div>
-        </div>
-        </div>
-        <script src="./assets/js/html2canvas.min.js"></script>
-        <script src="./assets/js/scrpt.js"></script>
-        <script>
-            const btn = document.querySelector('button');
-            btn.addEventListener('click', () => {
-
-                html2canvas(document.querySelector('#capture')).then(canvas => {
-
-                    var link = document.createElement('a');
-
-                    link.download = 'filename.png';
-
-                    link.href = canvas.toDataURL();
-
-                    link.click();
-                });
-            });
+    <div class="message">
+        <h1>please open from desktop</h1>
+    </div>
+    <div class="desktop">
+        <div id="fb-root"></div>
+        <script async defer crossorigin="anonymous"
+            src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v5.0&appId=730072863784671&autoLogAppEvents=1">
         </script>
+        <div>
+            <h1>Which One You Could Beat in a Fight 💪🥊</h1>
+            <h5>PC Version 🖥️</h5>
+            <div class="battleField">
+                <div class="arrow"></div>
+                <div class="box box2" id="div2" ondrop="drop(event)" ondragover="allowDrop(event)">
+                    <div class="darkRed">
+                        They Would Kick my ass
+                    </div>
+                </div>
+                <div class="box box1" id="div2" ondrop="drop(event)" ondragover="allowDrop(event)">
+                    <div class="ALIZARIN">
+                        They Would Kick my ass
+                    </div>
+                </div>
+                <div class="box box3" id="div2" ondrop="drop(event)" ondragover="allowDrop(event)">
+                    <div class="BELIZEHOLE">
+                        Fair Fight
+                    </div>
+                </div>
+                <div class="box box4" id="div2" ondrop="drop(event)" ondragover="allowDrop(event)">
+                    <div class="JOUSTBLUE">
+                        Fair Fight
+                    </div>
+                </div>
+                <div class="box box5" id="div2" ondrop="drop(event)" ondragover="allowDrop(event)">
+                    <div class="darckgreen">
+                        I Would Kick theirass
+                    </div>
+                </div>
+                <div class="box box6" id="div2" ondrop="drop(event)" ondragover="allowDrop(event)">
+                    <div class="lightgreen">
+                        I Would Kick theirass
+                    </div>
+                </div>
+                <div class="arrow2"></div>
+            </div>
+            <!-- All contestants -->
+            <div class="contestants" id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <img title="Baby yoda" src="./assets/img/Baby-Toy-Preorder-FP.png" draggable="true"
+                    ondragstart="drag(event)" id="drag1" URL="drag this image in the field">
+                <img title="Casey-neistati" src="./assets/img/casey-neistati.png" draggable="true"
+                    ondragstart="drag(event)" id="drag2">
+                <img title="" src="./assets/img/41eqKcQXl4L.png" draggable="true" ondragstart="drag(event)" id="drag3">
+                <img title="CinnamonToastKen" src="./assets/img/CinnamonToastKen.png" draggable="true"
+                    ondragstart="drag(event)" id="drag4">
+                <img title="David-Dobrik" src="./assets/img/David-Dobrik.png" draggable="true" ondragstart="drag(event)"
+                    id="drag5">
+                <img title="Dr-phil" src="./assets/img/dr-phil.png" draggable="true" ondragstart="drag(event)"
+                    id="drag6">
+                <img title="Elon-musk" src="./assets/img/elon-musk.png" draggable="true" ondragstart="drag(event)"
+                    id="drag7">
+                <img title="Felix-kjellberg" src="./assets/img/felix-kjellberg.png" draggable="true"
+                    ondragstart="drag(event)" id="drag8">
+                <img title="Jacksepticeye" src="./assets/img/jacksepticeye.png" draggable="true"
+                    ondragstart="drag(event)" id="drag9">
+                <img title="Jake-Paul" src="./assets/img/Jake-Paul.png" draggable="true" ondragstart="drag(event)"
+                    id="drag10">
+                <img title="Jenna-Marbles" src="./assets/img/Jenna-Marbles.png" draggable="true"
+                    ondragstart="drag(event)" id="drag11">
+                <img title="John-Wick" src="./assets/img/John-Wick.png" draggable="true" ondragstart="drag(event)"
+                    id="drag12">
+                <img title="KSI" src="./assets/img/KSI.png" draggable="true" ondragstart="drag(event)" id="drag13">
+                <img title="Lilly-Singh" src="./assets/img/Lilly-Singh.png" draggable="true" ondragstart="drag(event)"
+                    id="drag14">
+                <img title="Liza-koshy" src="./assets/img/liza-koshy.png" draggable="true" ondragstart="drag(event)"
+                    id="drag15">
+                <img title="Logan-Paul" src="./assets/img/Logan-Paul.png" draggable="true" ondragstart="drag(event)"
+                    id="drag16">
+                <img title="Mark" src="./assets/img/mark.png" draggable="true" ondragstart="drag(event)" id="drag17">
+                <img title="Michael-Stevens" src="./assets/img/Michael-Stevens.png" draggable="true"
+                    ondragstart="drag(event)" id="drag18">
+                <img title="MIRANDA" src="./assets/img/MIRANDA SINGS.png" draggable="true" ondragstart="drag(event)"
+                    id="drag19">
+                <img title="Mr-beast" src="./assets/img/mr-beast.png" draggable="true" ondragstart="drag(event)"
+                    id="drag20">
+                <img title="Ninja" src="./assets/img/ninja.png" draggable="true" ondragstart="drag(event)" id="drag21">
+                <img title="SSSNIPERWOLF" src="./assets/img/SSSNIPERWOLF.png" draggable="true" ondragstart="drag(event)"
+                    id="drag22">
+                <img title="Tana-Mongeau" src="./assets/img/Tana-Mongeau.png" draggable="true" ondragstart="drag(event)"
+                    id="drag23">
+                <img title="Will-smith" src="./assets/img/will-smith.png" draggable="true" ondragstart="drag(event)"
+                    id="drag24">
+                <img title="Dr-phil-batman" src="./assets/img/dr-phil-batman.png" draggable="true"
+                    ondragstart="drag(event)" id="drag25">
+            </div>
+            <button>Download your image</button>
+            <div class="socialMedia">
+                <a class="myLink" href="https://www.youtube.com/watch?v=bnkDBfV3OoM&t=50s">📺 Watch the video (subscribe
+                    to
+                    pewdiepie)</a>
+                <a class="myLink" href="https://github.com/amradelata/Fight">🥇 Link on git: Fight (If you want to
+                    improve
+                    it)</a>
+                <a class="myLink" href="https://amradelata.com">❤️ Made with: amradelata</a>
+                <a class="myLink" href="mailto:amradelata@gmail.com">🥋 Contact with me: amradelata@gmail.com</a>
+                <!-- facebook share button -->
+                <a class="fb-share-button" data-href="https://whiconeyoucouldbeatinafight.netlify.com"
+                    data-layout="button" data-size="large"><a target="_blank"
+                        href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.amradelata.com%2F&amp;src=sdkpreparse"
+                        class="fb-xfbml-parse-ignore"></a></a>
+                <!-- twitter share button -->
+                <a class="twitter-share-button"
+                    href="https://twitter.com/intent/tweet?text=https://whiconeyoucouldbeatinafight.netlify.com/%20made%20with "
+                    data-size="large">
+                    Tweet</a>
+                <link rel="canonical" href="https://www.amradelata.com/">
+            </div>
+        </div>
+    </div>
+    </div>
+    <script src="./assets/js/html2canvas.min.js"></script>
+    <script src="./assets/js/scrpt.js"></script>
+    <script>
+        const btn = document.querySelector('button');
+        btn.addEventListener('click', () => {
+
+            html2canvas(document.querySelector('#capture')).then(canvas => {
+
+                var link = document.createElement('a');
+
+                link.download = 'filename.png';
+
+                link.href = canvas.toDataURL();
+
+                link.click();
+            });
+        });
+    </script>
 </body>
 
 </html>
